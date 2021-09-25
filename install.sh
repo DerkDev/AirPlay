@@ -2,7 +2,7 @@
 cd ~/
 mkdir gitapp
 cd gitapp
-wget https://raw.githubusercontent.com/sousasov/RPiPlay-LibreElec/master/gitapp/Dockerfile
+wget https://raw.githubusercontent.com/DerkDen/AirPlay/main/gitapp/Dockerfile
 docker build .
 echo -n "Enter Successfully built number > "
 read number
@@ -16,8 +16,8 @@ echo "}" >> .profile
 source ~/.profile
 rm -rf ~/gitapp
 cd /storage
-git clone https://github.com/sousasov/RPiPlay-LibreElec
-cd /storage/RPiPlay-LibreElec/RPiPlayBuild
+git clone https://github.com/DerkDev/AirPlay
+cd /storage/AirPlay/RPiPlayBuild
 chmod +x build_with_docker.sh
 ./build_with_docker.sh
 chmod +x /storage/RpiPlay/rpiplay
@@ -35,7 +35,7 @@ cd /storage/RpiPlay/
 EOT
 chmod +x autostart.sh
 echo "Cleaning temp files"
-rm -rf /storage/RPiPlay-LibreElec
+rm -rf /storage/AirPlay
 cd ~/
 rm -rf install.sh 
 echo "Instalation is done now I restarting LibreElec. After restart AirPlay starts working"
