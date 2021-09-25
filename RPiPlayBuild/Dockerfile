@@ -17,6 +17,7 @@ WORKDIR /work/RPiPlay
 
 # Copy the libdns_sd library
 RUN mkdir build
+RUN ls -R /usr/lib/
 RUN cp /usr/lib/arm-linux-gnueabihf/libdns_sd.so.1 ./build/
 
 # Alter the cmake file to use the libdns_sd library locally
