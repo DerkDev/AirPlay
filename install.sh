@@ -2,7 +2,7 @@
 cd ~/
 mkdir gitapp
 cd gitapp
-wget https://raw.githubusercontent.com/DerkDen/AirPlay/main/gitapp/Dockerfile
+wget https://raw.githubusercontent.com/DerkDev/AirPlay/main/gitapp/Dockerfile.txt
 docker build .
 echo -n "Enter Successfully built number > "
 read number
